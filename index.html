@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS</title>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Interno -->
+    <style>
+        /* por seletor */
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: burlywood;
+        /* espaçamento externo */
+            margin: 20px;
+        /* espaçamento interno */
+            padding: 80px;
+        }
+        h2 {
+            color: blue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* classe */
+        .destaque{
+            color: darkgreen;
+            font-size: 18px;
+            border: 15px dashed lightgreen;
+            padding: 30px;
+        }
+
+        /* id */
+        #especial{
+            background-color: lightgoldenrodyellow;
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid darkgoldenrod;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Exemplo de CSS Interno, Externo e Inline</h1>
+
+    <!-- CSS Inline -->
+     <p style="color: red; font-size: 20px;">
+        Este é um parágrafo com CSS Inline.
+     </p>
+
+    <!-- CSS Interno-->
+     <h2> Este é um título com CSS Interno. </h2>
+
+    <!-- usando class -->
+     <p class="destaque"> Este parágrafo usa uma classe no CSS. </p>
+
+    <!-- usando id -->
+     <div id="especial"> Este é um bloco com ID. </div>
+
+    <!-- CSS Externo -->
+     <p class="externo"> Este é um título com CSS Externo. </p>
+
+</body>
+</html>
